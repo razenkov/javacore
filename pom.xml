@@ -29,6 +29,15 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>chrome</id>
+            <properties>
+                <selenium.browser>chrome</selenium.browser>
+            </properties>
+        </profile>
+    </profiles>
+
 
 
 </project>
