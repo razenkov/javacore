@@ -1,6 +1,6 @@
-package center.kit.app.homework.lesson4;
+package center.kit.app.classwork.lesson4;
 
-public class WideningCastRunning {
+public class WideningCastRunner {
     byte byte1 = 127;
     short short1 = 0;
     int int1 = 0;
@@ -14,4 +14,3 @@ public class WideningCastRunning {
 
     }
 }
-
