@@ -1,6 +1,6 @@
 package center.kit.app.homework.lesson4.util.convertors;
 
-public class PrimitiveConvertor {
+public class PrimitiveConverter {
 
     public char floatToChar(float float1)
     {

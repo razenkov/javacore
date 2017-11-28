@@ -1,19 +1,55 @@
 package center.kit.runners.homework.lesson4.utils.convertors;
 
-import center.kit.app.homework.lesson4.util.convertors.PrimitiveConvertor;
+import center.kit.app.homework.lesson4.util.convertors.PrimitiveConverter;
 
 public class Lesson4Runner {
     public static void main(String[] args) {
-        PrimitiveConvertor convertor = new PrimitiveConvertor();
+        PrimitiveConverter converter = new PrimitiveConverter();
 
-        float testFloat = 120.456f;
-        System.out.println("Float "+ testFloat +" casted to char: " + convertor.floatToChar(testFloat));
+        //test charToInt()
+        System.out.print("Method charToInt() test:");
 
-        int testInt = 21474;
-        System.out.println("Int " + testInt + " casted to char: " + convertor.intToChar(testInt));
+        if (
+                        converter.charToInt('9') == 57 &&
+                        converter.charToInt('U') == 85 &&
+                        converter.charToInt('u') == 117)
+            System.out.println(" PASS.");
 
-        char testChar = 'X';
-        System.out.println("Char " + testChar + " casted to int: " + convertor.charToInt(testChar));
+        else
+            System.out.println(" FAIL");
+
+        // test intToChar()
+        System.out.print("Method intToChar() test:");
+
+        if (
+
+                        converter.intToChar(57) == '9' &&
+                        converter.intToChar(85) == 'U' &&
+                        converter.intToChar(117) == 'u')
+            System.out.println(" PASS.");
+
+        else
+            System.out.println(" FAIL");
+
+        // test floatToChar
+        System.out.print("Method floatToChar() test:");
+
+        if (
+                        converter.floatToChar(57.23423324f) == '9' &&
+                        converter.floatToChar(85.452354f) == 'U' &&
+                        converter.floatToChar(0.00f) == 0)
+            System.out.println(" PASS.");
+
+        else
+            System.out.println(" FAIL.");
+
+
+
+
+
+
+
+
 
     }
 }
