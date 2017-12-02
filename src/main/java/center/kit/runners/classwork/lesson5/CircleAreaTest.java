@@ -2,6 +2,7 @@ package center.kit.runners.classwork.lesson5;
 
 import center.kit.app.classwork.lesson5.CircleArea;
 import java.util.Scanner;
+import java.util.zip.CheckedInputStream;
 
 public class CircleAreaTest {
     public static void main(String[] args) {
@@ -16,5 +17,11 @@ public class CircleAreaTest {
         double area1 = 12.2221;
         double area2 = 12.2222;
         System.out.println(CircleArea.CircleAreaComparer(area1, area2));
+
+        CircleArea.isEven(5);
+        CircleArea.isEven(10);
+
+
+
     }
 }

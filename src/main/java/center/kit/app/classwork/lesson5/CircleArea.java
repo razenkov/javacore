@@ -12,7 +12,7 @@ public class CircleArea {
 
         if (area1 != area2) {
 
-            if (area1 > area2) {
+            if (area1 > area2){
                 return "First.";
             } else {
                 return "Second.";
@@ -22,4 +22,13 @@ public class CircleArea {
                 return "areas are equals.";
         }
     }
+
+    public static void isEven(int a) {
+        if (a % 2 == 0) {
+            System.out.println("The number " + a + " is EVEN");
+        } else {
+            System.out.println("The number " + a + " is NOT EVEN");
+        }
+    }
+
 }
