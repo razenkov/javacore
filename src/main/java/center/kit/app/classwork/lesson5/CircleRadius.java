@@ -3,7 +3,7 @@ package center.kit.app.classwork.lesson5;
 import java.util.Scanner;
 
 public class CircleRadius {
-    public static void calculate(){
+    public static void calculate() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Please enter circle radius");

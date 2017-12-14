@@ -2,24 +2,26 @@ package center.kit.app.classwork.lesson5;
 
 public class CircleArea {
 
-    public static double calculate(double radius){
+    public static double calculate(double radius) {
 
         double res = Math.PI * Math.pow(radius, 2);
+        System.out.println("Area is : " + res);
         return res;
     }
 
-    public static String CircleAreaComparer(double area1, double area2) {
-
+    public static String isBigger(double area1, double area2) {
         if (area1 != area2) {
-
-            if (area1 > area2){
+            if (area1 > area2) {
+                System.out.println("First is bigger");
                 return "First.";
             } else {
+                System.out.println("Second is bigger");
                 return "Second.";
             }
 
-        }else {
-                return "areas are equals.";
+        } else {
+            System.out.println("Areas are equals.");
+            return "areas are equals.";
         }
     }
 
