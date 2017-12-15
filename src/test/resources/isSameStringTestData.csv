@@ -1,0 +1,7 @@
+argA, argB, expRes
+Hello,Hello,true
+Hello,ByBy,false
+tootoo,tootoo,true
+Hell1o,Hello,false
+1212.891143818,1212.891143818,true
+143818,1212.891143812,false

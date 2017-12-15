@@ -1,0 +1,7 @@
+argA, argB, expRes
+Hello,x,false
+Hello,H,true
+Hell1o,1,true
+2444245515,t,false
+A,65,false
+a,a,true

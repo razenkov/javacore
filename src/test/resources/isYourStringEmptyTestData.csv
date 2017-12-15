@@ -1,0 +1,7 @@
+argA, expRes
+notEmptyString,false
+,true
+0,false
+null,false
+NULL,false
+isNull,false
