@@ -3,7 +3,7 @@ package center.kit.runners.homework.lesson8;
 import center.kit.app.homework.lesson8.StringPractice;
 
 import java.util.Scanner;
-
+//Schoology_lesson8
 public class StringPracticeRunner {
     public static void main(String[] args) {
         while (true) {

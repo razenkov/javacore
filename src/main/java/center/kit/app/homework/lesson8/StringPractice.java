@@ -1,5 +1,5 @@
 package center.kit.app.homework.lesson8;
-
+//Schoology_lesson8
 public class StringPractice {
     public static void isPalindrome1(String s) {
         boolean isPalindrome = true;
