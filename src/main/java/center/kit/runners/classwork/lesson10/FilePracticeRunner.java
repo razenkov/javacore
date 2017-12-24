@@ -1,4 +1,4 @@
-package center.kit.runners.lesson10;
+package center.kit.runners.classwork.lesson10;
 
 import center.kit.app.homework.lesson10.FilePractice;
 
