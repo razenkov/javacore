@@ -1,6 +1,6 @@
 package center.kit.runners.homework.lesson12;
 
-import center.kit.app.homework.lesson12.FlowerBouquet;
+import center.kit.app.homework.lesson12.*;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -8,7 +8,7 @@ import java.util.Random;
 public class FlowerBouquetRunner {
     public static void main(String[] args) {
         //Create bouquet
-        ArrayList<FlowerBouquet.Flower> bouquet = new ArrayList<>();
+        ArrayList<Flower> bouquet = new ArrayList<>();
         Random r = new Random();
         //Fill bouquet
         for (int i = 0; i < 100; ++i) {
@@ -18,16 +18,17 @@ public class FlowerBouquetRunner {
             }
             switch (flower) {
                 case 1:
-                    bouquet.add(new FlowerBouquet.Rose(r.nextDouble() * 10));
+                    bouquet.add(new Rose(r.nextDouble() * 10));
+                    //bouquet.add(new Rose(r.nextDouble() * 10));
                     break;
                 case 2:
-                    bouquet.add(new FlowerBouquet.Carnation(r.nextDouble() * 10));
+                    bouquet.add(new Carnation(r.nextDouble() * 10));
                     break;
                 case 3:
-                    bouquet.add(new FlowerBouquet.Tulip(r.nextDouble() * 10));
+                    bouquet.add(new Tulip(r.nextDouble() * 10));
                     break;
                 default:
-                    bouquet.add(new FlowerBouquet.Chamomile(r.nextDouble() * 10));
+                    bouquet.add(new Chamomile(r.nextDouble() * 10));
                     break;
             }
         }
