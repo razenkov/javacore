@@ -1,4 +1,4 @@
-package center.kit.runners.homework;
+package center.kit.runners.homework.lesson11_1;
 
 import center.kit.app.homework.lesson11_1.WhiteCollar;
 
