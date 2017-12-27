@@ -2,7 +2,9 @@ package center.kit.app.homework.lesson10;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.util.NoSuchElementException;
 import java.util.Random;
+import java.util.Scanner;
 
 public class FilePractice {
 
@@ -84,5 +86,47 @@ public class FilePractice {
         }
     }
 
+    public static String getNameOfFile(){
+        System.out.println("Please enter name of file");
+        String filename = "";
+        boolean isReady = false;
+        Scanner sc = new Scanner(System.in);
+        while(!isReady) {
+            try {
+                filename = sc.next();
+                if (filename.contains(" ")) {
+                    System.out.println("Enter correct name of file: ");
+
+                } else {
+                    isReady = true;
+                }
+            }catch (Exception e){
+                System.out.println(e.getStackTrace());
+            }
+        }
+        sc.close();
+        return filename;
+    }
+
+    public static String safelyGetString(){
+        boolean isReady = false;
+        Scanner sc = new Scanner(System.in);
+        String stringToSave = "";
+        while(sc.hasNext()) {
+            try {
+
+                    stringToSave = sc.next();
+                    isReady = true;
+
+                    //System.out.println("Lets try again...");
+
+            }catch (Exception e){
+                System.out.println("Enter correct data: ");
+                System.out.println(e.getStackTrace());
+            }
+        }
+        sc.close();
+        return stringToSave;
+    }
 
 }
