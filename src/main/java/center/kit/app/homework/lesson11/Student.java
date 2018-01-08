@@ -9,11 +9,18 @@ public class Student extends Person {
     }
 
     public String getName(){
-        return name;
+        return this.getName();
     }
 
-    public void showNameAndGroupe()
+    public void showNameAndGroup()
     {
         System.out.println("Student name: " + getName() + " group " + this.group);
+    }
+
+    // Override method showDegree() in class Student and Lecturer and display "Student's degree"
+    // and "Lecturer's degree" correspondingly.
+    @Override
+    public void showDegree(){
+        System.out.println("Student's degree");
     }
 }
