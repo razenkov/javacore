@@ -6,50 +6,16 @@ public class Lesson4Runner {
     public static void main(String[] args) {
         PrimitiveConverter converter = new PrimitiveConverter();
 
-        //test charToInt()
-        System.out.print("Method charToInt() test:");
+        converter.floatToChar(57.23423324f);
+        converter.floatToChar(85.452354f);
+        converter.floatToChar(0.00f);
 
-        if (
-                        converter.charToInt('9') == 57 &&
-                        converter.charToInt('U') == 85 &&
-                        converter.charToInt('u') == 117)
-            System.out.println(" PASS.");
+        converter.intToChar(57);
+        converter.intToChar(85);
+        converter.intToChar(117);
 
-        else
-            System.out.println(" FAIL");
-
-        // test intToChar()
-        System.out.print("Method intToChar() test:");
-
-        if (
-
-                        converter.intToChar(57) == '9' &&
-                        converter.intToChar(85) == 'U' &&
-                        converter.intToChar(117) == 'u')
-            System.out.println(" PASS.");
-
-        else
-            System.out.println(" FAIL");
-
-        // test floatToChar
-        System.out.print("Method floatToChar() test:");
-
-        if (
-                        converter.floatToChar(57.23423324f) == '9' &&
-                        converter.floatToChar(85.452354f) == 'U' &&
-                        converter.floatToChar(0.00f) == 0)
-            System.out.println(" PASS.");
-
-        else
-            System.out.println(" FAIL.");
-
-
-
-
-
-
-
-
-
+        converter.charToInt('9');
+        converter.charToInt('U');
+        converter.charToInt('u');
     }
 }
