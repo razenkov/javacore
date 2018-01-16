@@ -15,7 +15,7 @@ public class ArraySorterGenerics<TYPE extends Number> {
         return array;
     }
 
-    public TYPE[] sort() {
+    private void sort() {
         int n = array.length;
         for (int i = 0; i < n; i++) {
             for (int j = 1; j < (n - i); j++) {
@@ -30,11 +30,10 @@ public class ArraySorterGenerics<TYPE extends Number> {
                 }
             }
         }
-        return array;
     }
 
 
-    public static <TYPE extends Number> TYPE[] sort(TYPE[] arr) {
+    public static <TYPE extends Number> void sort(TYPE[] arr) {
         TYPE temp;
         int n = arr.length;
         for (int i = 0; i < n; i++) {
@@ -50,7 +49,6 @@ public class ArraySorterGenerics<TYPE extends Number> {
                 }
             }
         }
-        return arr;
     }
 }
 

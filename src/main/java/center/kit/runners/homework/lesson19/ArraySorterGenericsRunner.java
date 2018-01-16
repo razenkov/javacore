@@ -1,13 +1,14 @@
 package center.kit.runners.homework.lesson19;
 
 import center.kit.app.homework.lesson19.ArraySorterGenerics;
+import center.kit.app.homework.lesson5.ArraySort;
 
 import java.util.Arrays;
 import java.util.Random;
 
 public class ArraySorterGenericsRunner {
     public static void main(String[] args) {
-        int sizeOfTestArray = 50;
+        int sizeOfTestArray = 5;
         Random r = new Random();
 
         Double[] doubleArr = new Double[sizeOfTestArray];
@@ -35,14 +36,11 @@ public class ArraySorterGenericsRunner {
         System.out.println(Arrays.toString(doubleArr));
 
         //sorted by non static method
-        new ArraySorterGenerics<>(intArr).getArray();
-        System.out.println(Arrays.toString(intArr));
+        System.out.println(Arrays.toString(new ArraySorterGenerics<>(intArr).getArray()));
 
         ArraySorterGenerics.sort(shortArr);
         System.out.println(Arrays.toString(shortArr));
 
-        new ArraySorterGenerics<>(longArr).getArray();
-        System.out.println(Arrays.toString(longArr));
-
+        System.out.println(Arrays.toString(new ArraySorterGenerics<>(longArr).getArray()));
     }
 }
