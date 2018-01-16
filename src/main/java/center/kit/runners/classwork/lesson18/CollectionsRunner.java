@@ -1,10 +1,5 @@
 package center.kit.runners.classwork.lesson18;
 
-import com.sun.xml.internal.ws.server.ServerRtException;
-import sun.applet.resources.MsgAppletViewer;
-
-import javax.print.attribute.HashAttributeSet;
-import java.io.Serializable;
 import java.util.*;
 
 public class CollectionsRunner {
