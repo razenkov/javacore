@@ -1,5 +1,4 @@
 package center.kit.app.homework.lesson19;
-
 import java.math.BigDecimal;
 
 public class ArraySorterGenerics<TYPE extends Number> {
@@ -32,7 +31,6 @@ public class ArraySorterGenerics<TYPE extends Number> {
         }
     }
 
-
     public static <TYPE extends Number> void sort(TYPE[] arr) {
         TYPE temp;
         int n = arr.length;
@@ -51,5 +49,3 @@ public class ArraySorterGenerics<TYPE extends Number> {
         }
     }
 }
-
-
